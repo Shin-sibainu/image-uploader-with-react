@@ -19,6 +19,7 @@
 .imageUplodeBox {
   border: 2px dashed #2d6395;
   padding: 35px 60px;
+  position: relative;
 }
 
 .imageLogoAndText p {
@@ -28,4 +29,9 @@
 .imageUploadInput {
   opacity: 0;
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }

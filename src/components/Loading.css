@@ -1,0 +1,13 @@
+.loadingBox {
+  width: 300px;
+  height: 100px;
+  padding: 20px 45px 5px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px gray;
+  color: gray;
+}
+
+.loadingBox p {
+  margin-top: 10px;
+}

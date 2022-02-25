@@ -1,0 +1,10 @@
+.imageUplodedBox {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.uploadedImage {
+  border-radius: 10px;
+  width: 338px;
+  height: 224px;
+}
