@@ -1,13 +1,15 @@
 import React from "react";
-import { Button } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import "./ImageUpload.css";
 import "./Uploaded.css";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 
 const Uploaded = ({ downLoadURL, setIsUploaded }) => {
   return (
     <div className="outerBox">
       <div className="title">
-        <p>Logo</p>
+        <CheckCircleOutlineIcon />
         <p>アップロード成功！</p>
       </div>
       <div className="imageUplodedBox">
@@ -21,8 +23,21 @@ const Uploaded = ({ downLoadURL, setIsUploaded }) => {
       </div>
 
       {/* コピーリンクの追加 */}
+      <div className="copyLinkArea">
+        <TextField value={downLoadURL} className="copyLinkInput" />
+        <CopyToClipboard
+          text={downLoadURL}
+          onCopy={() => this.setState({ copied: true })}
+        >
+          <Button variant="contained">コピー</Button>
+        </CopyToClipboard>
+      </div>
 
-      <Button variant="contained" onClick={() => setIsUploaded(false)}>
+      <Button
+        variant="contained"
+        onClick={() => setIsUploaded(false)}
+        style={{ marginTop: 20 }}
+      >
         新規アップロード
       </Button>
     </div>

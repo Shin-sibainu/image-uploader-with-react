@@ -7,4 +7,21 @@
   border-radius: 10px;
   width: 338px;
   height: 224px;
+  /* object-fit: cover; */
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 7.3px !important;
+  color: gray !important;
+}
+
+.copyLinkArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.css-i4bv87-MuiSvgIcon-root {
+  font-size: 45px !important;
+  color: #3fb83f !important;
 }
