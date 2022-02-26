@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import React, { useState } from "react";
-import ImageLogo from "../images/image.svg";
+import ImageLogo from "../image.svg";
 import "./ImageUpload.css";
 import storage from "../lib/firebase";
 import {
@@ -89,7 +89,11 @@ const ImageUploader = () => {
               <p>または</p>
               <Button variant="contained">
                 ファイルを選択
-                <input type="file" className="imageUploadInput" />
+                <input
+                  type="file"
+                  className="imageUploadInput"
+                  onChange={OnFileUploadToFirebase}
+                />
               </Button>
             </div>
           )}
